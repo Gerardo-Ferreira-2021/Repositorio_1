@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario de registro</title>
+    <link rel="icon" href="Imagenes/nysl_logo.png">
+    <link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+    <div id="contenedor">
+    <header>
+    <div id="caja1">
+        <h1 id="titulo1">Northside Youth Soccer League</h1>
+        <div id="cajalink">
+            <a href="index.html" id="home">Home</a>
+            <a href="mision.html" id="about">About</a>
+            <a href="contacto.html"id="contac">Contac</a>
+            <a href="Information.html"id="Partidos">Game Info.</a>
+            <a href="reglas.html"id="reglas">Rules</a>
+            <a href="registro.html"id="regi">Formulario R.</a>
+            </div> <!--cierre caja link-->
+    </div>
+    </header>
+    <nav>
+    <div id="caja2">
+        <img src="Imagenes/design2_image1.jpg" alt="" id="fotoprincipal">
+    
+    </div>  <!--div cierre caja 2-->
+</nav>
+    <div id="caja3">
+        
+    </div>
+    <div id="caja4">
+        <img src="Imagenes/nysl_logo.png" alt="" id="logo">
+    </div>
+    <aside>
+    <div id="caja5">
+        
+             <img id="transp" src="Imagenes/transparente.jpg" alt="" width="850">
+             <img id="iconoform" src="Imagenes/iconoform.PNG" alt="" width="50" height="50">
+              <h1 id="formu"><u>"Formulario de Inscripcion"</u></h1>
+        <form action="show_data.html" method="GET"><br><br>
+            <label for="nombre">Nombre del Jugador :</label>
+            <input type="text" name="nombre" id="nombre" size="20" placeholder="Ingrese su Nombre" autofocus required> 
+            <label for="apellido">Apellido :</label>
+            <input type="text" name="apellido" id="apellido" size="20" placeholder="Apellido paterno y materno" required><br><br><br>
+            <label for="direccion">Direccion :</label>
+            <input type="text" name="direccion" id="direccion" size="65" placeholder="Ingrese Direccion y numero" required><br><br><br>
+            <label for="mail">Email :</label>
+            <input type="email" name="email" id="mail" size="20" placeholder="ejemplo@ejemplo.com" required>&nbsp;&nbsp;
+            <label for="cel">Telefono o Celular :</label>
+            <input type="tel" name="Telefono" id="cel" size="20" placeholder="(Código de área) Número" required><br><br><br>
+            <label for="ciudad">Ciudad :</label>
+            <input type="text" name="ciudad" id="ciudad" size="20" required>
+            <label for="codigo">Codigo Postal :</label>
+            <input type="text" name="codigo" id="codigo" size="20" required><br><br><br>
+            <label for="fechaNacimiento">Fecha de nacimiento (dd/mm/aaaa) :</label>
+            <input type="date" name="fechaNacimiento" id="fechaNacimiento" size="8" >&nbsp;&nbsp;&nbsp;
+            
+            <label for="genero">Genero :</label>&nbsp;&nbsp;
+            <label for="genero-mujer">Mujer </label>
+            <input type="radio" name="genero" value="mujer" id="genero-mujer">&nbsp;&nbsp;&nbsp;&nbsp;
+            <label for="genero-hombre">Hombre </label>
+            <input type="radio" name="genero" value="Hombre" id="genero-hombre"><br><br>
+             
+            <label for="grado">Grado preescolar : </label>&nbsp;&nbsp;
+            
+            
+            <input type="checkbox" name="grado" value="Primero" id="uno">
+            <label for="uno">1° </label>&nbsp;&nbsp;
+            <input type="checkbox" name="grado" value="Segundo" id="dos">
+            <label for="dos">2° </label>&nbsp;&nbsp;
+            <input type="checkbox" name="grado" value="tercero" id="tres">
+            <label for="tres">3° </label>&nbsp;&nbsp;
+            <input type="checkbox" name="grado" value="Cuarto" id="cuatro">
+            <label for="cuatro">4° </label>&nbsp;&nbsp;
+            <input type="checkbox" name="grado" value="Quinto" id="cinco">
+            <label for="cinco">5° </label><br><br>
+            <label for="tutor">Padre o Tutor : </label>
+            <input type="text" name="padres-tutor" id="tutor" size="40"><br><br>
+            <h3>¿ De Que escuela vives mas Cerca?</h3><br>
+            <h4>Escuelas mas cercana :</h4><br>
+
+            <select id="ub">
+                <option selected value="0"> Elige una opción </option>
+                    
+                    <option value="Escuela">AJ Katzenmaier</option> 
+                    <option value="Escuela">Marjorie P Hart</option> 
+                    <option value="Escuela">Greenbay </option> 
+                    <option value="Escuela">North Elementary </option> 
+                    <option value="Escuela">Howard A Yeager  </option> 
+                    <option value="Escuela">South Elementary </option>
+                </optgroup>
+            </select><br><br>
+
+            <h4>¿Qué posición(es) juegas normalmente? (marque todas las que correspondan)</h4><br><br>
+
+            <input type="checkbox" name="posicion" value="Delantero" id="delantero">
+            <label for="delantero">Delantero </label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <input type="checkbox" name="posicion" value="Mediocampo" id="mediocampo">
+            <label for="mediocampo">Mediocampo </label><br>
+            <input type="checkbox" name="posicion" value="Arquero" id="arquero">
+            <label for="arquero">Arquero </label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <input type="checkbox" name="posicion" value="Defensa" id="defensa">
+            <label for="defensa">Defensa </label><br><br>
+
+            <h4>Tamaño Uniforme</h4><br><br>
+
+            <input type="checkbox" name="talla" value="Nino P" id="talla1">
+            <label for="talla1">Niño P </label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <input type="checkbox" name="talla" value="Mediano" id="talla2">
+            <label for="talla2">Mediano </label><br>
+            <input type="checkbox" name="talla" value="Nino M" id="talla3">
+            <label for="talla3">Niño M </label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <input type="checkbox" name="talla" value="Grande" id="talla4">
+            <label for="talla4">Grande </label><br>
+            <input type="checkbox" name="talla" value="Nino G" id="talla5">
+            <label for="talla5">Niño G </label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <input type="checkbox" name="talla" value="Extra-Grande" id="talla6">
+            <label for="talla6">Extra Grande </label><br>
+            <input type="checkbox" name="talla" value="Pequeno" id="talla7">
+            <label for="talla7">Pequeño </label><br><br><br>
+            
+            <h4>Permiso para Jugar</h4><br><br>
+
+            <p id="permiso">
+                Yo, el padre o tutor del solicitante de registro menor, estoy de acuerdo en que el solicitante de registro y
+yo acataremos todas las reglas de la Northside Youth Soccer League (NYSL). Al reconocer la posibilidad
+de lesiones físicas asociadas al fútbol y en consideración a la"Liga" que acepta al solicitante de registro
+para sus programas y actividades de fútbol, Por la presente libero y descargo a NYSL, sus empleados y
+personal asociado y voluntarios, incluyendo las instalaciones utilizadas para prácticas y juegos, contra
+cualquier reclamo por o en nombre del solicitante de registro como resultado de la participación del
+solicitante del programa a o en el transporte desde o hacia las actividades patrocinadas por NYSL.<br><br>
+Al firmar a continuación, acuerdo y autorizo lo anterior. Además, al firmar a continuación, reconozco
+que he leído la política de cancelación y acepto sus términos.
+            </p><br><br>
+
+            <label for="firma">Firma Padre/Tutor :</label>
+            <input type="text" name="firma" id="firma" size="30" placeholder="Ingrese su Nombre" required>
+            <label for="fecha">Fecha :</label>
+            <input type="datetime-local" name="fecha" id="fecha" size="8"><br><br><br>
+
+<p>
+            <input type="submit" value="Enviar Datos" class="envio">&nbsp;&nbsp;&nbsp;&nbsp;
+            <input type="reset" value="Limpiar Datos" class="envio">
+        </p><br><br><br><br>
+
+        </form>
+    </div>
+</aside>
+</div> <!--Cierre div contenedor-->
+</body>
+</html>
